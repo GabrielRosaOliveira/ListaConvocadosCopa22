@@ -24,9 +24,7 @@ class PlayersTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        confiCell()
-        selectionStyle = .none
-        configLabel()
+        configCellAndLabel()
     }
     
     func setupCell(player: Player) {
@@ -34,13 +32,12 @@ class PlayersTableViewCell: UITableViewCell {
         nameLabel.text = player.playerName
     }
     
-    func confiCell() {
+    func configCellAndLabel() {
+        selectionStyle = .none
         playerImageView.layer.makeShadow(color: .systemYellow, x: 1, y: 4, blur: 5, spread: 0)
         contentView.backgroundColor = .clear
         backGroundView.backgroundColor =  UIColor(red: 0/255, green: 122/255, blue: 244/255, alpha: 1.0)
-    }
-    
-    func configLabel() {
+        
         nameLabel.font = UIFont.systemFont(ofSize: 30, weight: .semibold)
         nameLabel.font = UIFont(name: "chalkduster" , size: 20)
         nameLabel.textColor = .white

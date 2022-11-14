@@ -8,7 +8,6 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
     
     @IBOutlet weak var playerImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -18,28 +17,33 @@ class DetailViewController: UIViewController {
     
     var player: Player?
     
-    var myString:NSString = "I AM KIRIT MODI"
-    var currentTeamLabel1 = NSMutableAttributedString()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-      
         configDetail()
+        
+    }
+    
+    func configDetail() {
         playerImageView.image = player?.playerImage
         nameLabel.text = player?.playerName
         ageLabel.text = "Idade: \(player?.playerAge ?? "") anos"
         currentTeamLabel.text = "Time atual: \(player?.currentTeam ?? "")"
         positionLabel.text = "Posição: \(player?.playerPosition ?? "")"
-    }
-    
-    func configDetail() {
+        
         view.backgroundColor =  UIColor(red: 238/255, green: 247/255, blue: 74/255, alpha: 1.0)
         
-        nameLabel.textColor = .black
-        currentTeamLabel.textColor = UIColor(red: 0/255, green: 122/255, blue: 244/255, alpha: 1.0)
-        ageLabel.textColor = UIColor(red: 0/255, green: 122/255, blue: 244/255, alpha: 1.0)
-        positionLabel.textColor = UIColor(red: 0/255, green: 122/255, blue: 244/255, alpha: 1.0)
+        ageLabel.textColor = UIColor(red: 0/255, green: 52/255, blue: 242/255, alpha: 1.0)
+        ageLabel.font = UIFont.systemFont(ofSize: 23, weight: .semibold)
+        ageLabel.font = UIFont(name: "kohinoor devanagari" , size: 23)
+        
+        currentTeamLabel.textColor = UIColor(red: 0/255, green: 52/255, blue: 242/255, alpha: 1.0)
+        currentTeamLabel.font = UIFont.systemFont(ofSize: 23, weight: .semibold)
+        currentTeamLabel.font = UIFont(name: "kohinoor devanagari" , size: 23)
+        
+        positionLabel.textColor = UIColor(red: 0/255, green: 52/255, blue: 242/255, alpha: 1.0)
+        positionLabel.font = UIFont.systemFont(ofSize: 23, weight: .semibold)
+        positionLabel.font = UIFont(name: "kohinoor devanagari" , size: 23)
         
     }
-
+    
 }

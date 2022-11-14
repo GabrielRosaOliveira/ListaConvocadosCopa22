@@ -11,11 +11,14 @@
         <!--Detail View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="DetailViewController" customModule="ListaConvocadosCopa22" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" modalTransitionStyle="crossDissolve" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="DetailViewController" customModule="ListaConvocadosCopa22" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brazao2" translatesAutoresizingMaskIntoConstraints="NO" id="4SK-LT-lAS">
+                                <rect key="frame" x="0.0" y="439" width="393" height="413"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y7k-Jc-JHg">
                                 <rect key="frame" x="53.666666666666657" y="113" width="286" height="299"/>
                                 <constraints>
@@ -24,9 +27,9 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Anj-Vi-UPP">
-                                <rect key="frame" x="53" y="468" width="87" height="42"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="53" y="468" width="104" height="44.333333333333371"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="35"/>
+                                <color key="textColor" red="0.02679084950990214" green="0.40846601219595957" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jve-hh-4hg">
@@ -51,10 +54,14 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="4SK-LT-lAS" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="0Ik-LE-v93"/>
+                            <constraint firstAttribute="bottom" secondItem="4SK-LT-lAS" secondAttribute="bottom" id="0rg-mK-075"/>
                             <constraint firstItem="ufN-HK-ApI" firstAttribute="top" secondItem="Jve-hh-4hg" secondAttribute="bottom" constant="30" id="9i9-hZ-SwP"/>
+                            <constraint firstItem="4SK-LT-lAS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="9us-QR-h2X"/>
                             <constraint firstItem="y7k-Jc-JHg" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="54" id="IJS-GT-96l"/>
                             <constraint firstItem="Anj-Vi-UPP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="53" id="KaQ-TN-Kwx"/>
                             <constraint firstItem="DsE-DU-jqi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="53" id="NtN-BC-tIC"/>
+                            <constraint firstItem="4SK-LT-lAS" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="439" id="PmZ-o0-9nd"/>
                             <constraint firstItem="ufN-HK-ApI" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="53" id="QRp-qE-3aR"/>
                             <constraint firstItem="DsE-DU-jqi" firstAttribute="top" secondItem="ufN-HK-ApI" secondAttribute="bottom" constant="30" id="Rv9-8i-0XI"/>
                             <constraint firstItem="Jve-hh-4hg" firstAttribute="top" secondItem="y7k-Jc-JHg" secondAttribute="bottom" constant="128" id="UQI-JZ-bHF"/>
@@ -77,6 +84,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="brazao2" width="338" height="501"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

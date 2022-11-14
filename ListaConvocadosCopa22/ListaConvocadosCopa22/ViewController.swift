@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     
     
+    @IBOutlet weak var logoBrasil: UIImageView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var titleLabel: UILabel!
     
@@ -31,7 +32,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         configTableView()
         configLabelAnView()
-        self.navigationController?.navigationBar.tintColor = UIColor(red: 0/255, green: 122/255, blue: 244/255, alpha: 1.0)
+        self.navigationController?.navigationBar.tintColor = UIColor(red: 0/255, green: 52/255, blue: 242/255, alpha: 1.0)
     }
     
     func configTableView() {
@@ -54,7 +55,6 @@ class ViewController: UIViewController {
         
         view.backgroundColor = UIColor(red: 238/255, green: 247/255, blue: 74/255, alpha: 1.0)
     }
-    
 }
 
 extension ViewController: UITableViewDelegate {
@@ -65,9 +65,6 @@ extension ViewController: UITableViewDelegate {
         vc?.player = player
         navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
     }
-    
-    
-    
 }
 
 extension ViewController: UITableViewDataSource {
@@ -85,6 +82,5 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 240
     }
-
     
 }

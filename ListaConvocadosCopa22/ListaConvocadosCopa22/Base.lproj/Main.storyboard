@@ -11,11 +11,18 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ListaConvocadosCopa22" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="BYZ-38-t0r" customClass="ViewController" customModule="ListaConvocadosCopa22" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bandeira" translatesAutoresizingMaskIntoConstraints="NO" id="2wn-Ei-uEq">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="165"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="165" id="6JW-hl-i3q"/>
+                                    <constraint firstAttribute="width" constant="393" id="OHF-K9-H7c"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhW-qS-uBC">
                                 <rect key="frame" x="159.66666666666666" y="70" width="73.666666666666657" height="43"/>
                                 <constraints>
@@ -37,15 +44,19 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pej-6i-6BZ" secondAttribute="trailing" id="JwT-41-vwq"/>
                             <constraint firstItem="pej-6i-6BZ" firstAttribute="top" secondItem="rhW-qS-uBC" secondAttribute="bottom" constant="20" id="LGd-rx-alF"/>
                             <constraint firstAttribute="bottom" secondItem="pej-6i-6BZ" secondAttribute="bottom" id="NP9-dV-uhY"/>
+                            <constraint firstItem="2wn-Ei-uEq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RBk-Ki-IbX"/>
                             <constraint firstItem="pej-6i-6BZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bhO-ug-HHg"/>
                             <constraint firstItem="rhW-qS-uBC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cbo-u7-wv3"/>
                             <constraint firstItem="rhW-qS-uBC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="70" id="jaK-Fq-Ig7"/>
+                            <constraint firstItem="2wn-Ei-uEq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nfa-jg-8UP"/>
+                            <constraint firstItem="2wn-Ei-uEq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qig-aW-3l8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="baO-vy-LBE">
                         <barButtonItem key="backBarButtonItem" title="Voltar" id="Qxg-Us-iI4"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="logoBrasil" destination="2wn-Ei-uEq" id="kg1-mW-2BU"/>
                         <outlet property="tableView" destination="pej-6i-6BZ" id="hiU-oU-Xo1"/>
                         <outlet property="titleLabel" destination="rhW-qS-uBC" id="7cg-0R-sol"/>
                     </connections>
@@ -57,7 +68,7 @@
         <!--Navigation Controller-->
         <scene sceneID="3ym-ju-sUl">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VFr-IP-TOM" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" id="VFr-IP-TOM" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="R8H-C8-laZ">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -74,6 +85,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bandeira" width="300" height="210"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
