@@ -16,16 +16,16 @@ class ViewController: UIViewController {
     
     let data: [Player] = [
         Player(playerImage: UIImage(named: "1") ?? UIImage(), playerName: "Alisson", playerAge: "30", currentTeam: "Liverpool", playerPosition: "Goleiro"),
-        Player(playerImage: UIImage(named: "2") ?? UIImage(), playerName: "Marquinhos", playerAge: "28", currentTeam: "PSG", playerPosition: "Zagueiro"),
+        Player(playerImage: UIImage(named: "2") ?? UIImage(), playerName: "Thiago Silva", playerAge: "38", currentTeam: "Chelsea", playerPosition: "Zagueiro"),
         Player(playerImage: UIImage(named: "3") ?? UIImage(), playerName: "Eder Militão", playerAge: "24", currentTeam: "Real Madrid", playerPosition: "Zagueiro"),
-        Player(playerImage: UIImage(named: "4") ?? UIImage(), playerName: "Alex Telles", playerAge: "29", currentTeam: "Sevilla", playerPosition: "Lateral-esquerdo"),
-        Player(playerImage: UIImage(named: "5") ?? UIImage(), playerName: "Daniel Alves", playerAge: "39", currentTeam: "Pumas", playerPosition: "Lateral-direito"),
+        Player(playerImage: UIImage(named: "4") ?? UIImage(), playerName: "Marquinhos", playerAge: "28", currentTeam: "PSG", playerPosition: "Zagueiro"),
+        Player(playerImage: UIImage(named: "5") ?? UIImage(), playerName: "Alex Telles", playerAge: "29", currentTeam: "Sevilla", playerPosition: "Lateral-esquerdo"),
         Player(playerImage: UIImage(named: "6") ?? UIImage(), playerName: "Casemiro", playerAge: "30", currentTeam: "Manchester United", playerPosition: "Volante"),
-        Player(playerImage: UIImage(named: "7") ?? UIImage(), playerName: "Antony", playerAge: "22", currentTeam: "Manchester United", playerPosition: "Atacante"),
+        Player(playerImage: UIImage(named: "7") ?? UIImage(), playerName: "Neymar", playerAge: "30", currentTeam: "PSG", playerPosition: "Atacante"),
         Player(playerImage: UIImage(named: "8") ?? UIImage(), playerName: "Paquetá", playerAge: "25", currentTeam: "West Ham", playerPosition: "Meia-atacante"),
-        Player(playerImage: UIImage(named: "9") ?? UIImage(), playerName: "Neymar", playerAge: "30", currentTeam: "PSG", playerPosition: "Atacante"),
+        Player(playerImage: UIImage(named: "9") ?? UIImage(), playerName: "Raphina", playerAge: "25", currentTeam: "Barcelona", playerPosition: "Ponta"),
         Player(playerImage: UIImage(named: "10") ?? UIImage(), playerName: "Vini Junior", playerAge: "22", currentTeam: "Real Madrid", playerPosition: "Atacante"),
-        Player(playerImage: UIImage(named: "11") ?? UIImage(), playerName: "Rodrygo", playerAge: "21", currentTeam: "Real Madrid", playerPosition: "Atacante")
+        Player(playerImage: UIImage(named: "11") ?? UIImage(), playerName: "Richarlison", playerAge: "25", currentTeam: "Tottenham", playerPosition: "Atacante")
     ]
     
     override func viewDidLoad() {
@@ -42,16 +42,16 @@ class ViewController: UIViewController {
         
         tableView.layer.cornerRadius = 30
         tableView.layer.borderWidth = 1.5
-        tableView.layer.borderColor = UIColor.systemBlue.cgColor
+        tableView.layer.borderColor = UIColor(red: 46/255, green: 180/255, blue: 247/255, alpha: 1.0).cgColor
         tableView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
-        
+        tableView.showsVerticalScrollIndicator = false
     }
     
     func configLabelAnView() {
         titleLabel.text = "Seleção Brasileira"
-        titleLabel.textColor = .blue
+        titleLabel.textColor = .systemBlue
         titleLabel.font = UIFont.systemFont(ofSize: 30, weight: .semibold)
-        titleLabel.font = UIFont(name: "kohinoor devanagari" , size: 30)
+        titleLabel.font = UIFont(name: "chalkduster" , size: 30)
         
         view.backgroundColor = UIColor(red: 238/255, green: 247/255, blue: 74/255, alpha: 1.0)
     }

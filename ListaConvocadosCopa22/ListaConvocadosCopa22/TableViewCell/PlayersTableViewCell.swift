@@ -34,9 +34,8 @@ class PlayersTableViewCell: UITableViewCell {
     
     func configCellAndLabel() {
         selectionStyle = .none
-        playerImageView.layer.makeShadow(color: .systemYellow, x: 1, y: 4, blur: 5, spread: 0)
         contentView.backgroundColor = .clear
-        backGroundView.backgroundColor =  UIColor(red: 0/255, green: 122/255, blue: 244/255, alpha: 1.0)
+        backGroundView.backgroundColor =  UIColor(red: 46/255, green: 180/255, blue: 247/255, alpha: 1.0)
         
         nameLabel.font = UIFont.systemFont(ofSize: 30, weight: .semibold)
         nameLabel.font = UIFont(name: "chalkduster" , size: 20)
