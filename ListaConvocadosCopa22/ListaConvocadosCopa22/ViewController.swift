@@ -33,6 +33,7 @@ class ViewController: UIViewController {
         configTableView()
         configLabelAnView()
         self.navigationController?.navigationBar.tintColor = UIColor(red: 0/255, green: 52/255, blue: 242/255, alpha: 1.0)
+        view.backgroundColor = UIColor(red: 147/255, green: 0/255, blue: 32/255, alpha: 1.0)
     }
     
     func configTableView() {
@@ -42,18 +43,18 @@ class ViewController: UIViewController {
         
         tableView.layer.cornerRadius = 30
         tableView.layer.borderWidth = 1.5
-        tableView.layer.borderColor = UIColor(red: 46/255, green: 180/255, blue: 247/255, alpha: 1.0).cgColor
+        tableView.layer.borderColor = UIColor(red: 147/255, green: 0/255, blue: 32/255, alpha: 1.0).cgColor
         tableView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
         tableView.showsVerticalScrollIndicator = false
     }
     
     func configLabelAnView() {
         titleLabel.text = "Seleção Brasileira"
-        titleLabel.textColor = .systemBlue
+        titleLabel.textColor = .white
         titleLabel.font = UIFont.systemFont(ofSize: 30, weight: .semibold)
         titleLabel.font = UIFont(name: "chalkduster" , size: 30)
         
-        view.backgroundColor = UIColor(red: 238/255, green: 247/255, blue: 74/255, alpha: 1.0)
+        view.backgroundColor = .white
     }
 }
 

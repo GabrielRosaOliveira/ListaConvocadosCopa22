@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C005FA9F29243BF400CF7427 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C005FA9E29243BF400CF7427 /* TabBarViewController.swift */; };
 		C03BA4FB292018EB002A7296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BA4FA292018EB002A7296 /* AppDelegate.swift */; };
 		C03BA4FD292018EB002A7296 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BA4FC292018EB002A7296 /* SceneDelegate.swift */; };
 		C03BA4FF292018EB002A7296 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BA4FE292018EB002A7296 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C005FA9E29243BF400CF7427 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		C03BA4F7292018EB002A7296 /* ListaConvocadosCopa22.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListaConvocadosCopa22.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C03BA4FA292018EB002A7296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C03BA4FC292018EB002A7296 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C005FA9D29243B8300CF7427 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C005FA9E29243BF400CF7427 /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		C03BA4EE292018EB002A7296 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +76,7 @@
 		C03BA4F9292018EB002A7296 /* ListaConvocadosCopa22 */ = {
 			isa = PBXGroup;
 			children = (
+				C005FA9D29243B8300CF7427 /* TabBar */,
 				C0FF07D729203202001DCC71 /* Model */,
 				C0FF07DA2920395A001DCC71 /* DetailsScreen */,
 				C0FF07D229203015001DCC71 /* TableViewCell */,
@@ -183,6 +194,7 @@
 				C03BA4FF292018EB002A7296 /* ViewController.swift in Sources */,
 				C03BA4FB292018EB002A7296 /* AppDelegate.swift in Sources */,
 				C0FF07DC29203998001DCC71 /* DetailViewController.swift in Sources */,
+				C005FA9F29243BF400CF7427 /* TabBarViewController.swift in Sources */,
 				C0FF07D929203210001DCC71 /* Player.swift in Sources */,
 				C03BA4FD292018EB002A7296 /* SceneDelegate.swift in Sources */,
 			);

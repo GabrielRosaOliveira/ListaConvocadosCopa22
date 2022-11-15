@@ -30,7 +30,7 @@ class DetailViewController: UIViewController {
         currentTeamLabel.text = "Time atual: \(player?.currentTeam ?? "")"
         positionLabel.text = "Posição: \(player?.playerPosition ?? "")"
         
-        view.backgroundColor =  .white
+        view.backgroundColor =  .darkGray
         
         ageLabel.textColor = UIColor(red: 0/255, green: 52/255, blue: 242/255, alpha: 1.0)
         ageLabel.font = UIFont.systemFont(ofSize: 23, weight: .semibold)
