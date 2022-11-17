@@ -11,9 +11,8 @@ class PlayersTableViewCell: UITableViewCell {
     
     @IBOutlet weak var playerImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
-    
     @IBOutlet weak var backGroundView: UIView!
-    
+    @IBOutlet weak var stickImageView: UIImageView!
     
     static let identifier: String = "PlayersTableViewCell"
     
@@ -30,6 +29,7 @@ class PlayersTableViewCell: UITableViewCell {
     func setupCell(player: Player) {
         playerImageView.image = player.playerImage
         nameLabel.text = player.playerName
+        stickImageView.image = player.stickImage
     }
     
     func configCellAndLabel() {

@@ -15,4 +15,5 @@ struct Player {
     var playerAge: String
     var currentTeam: String
     var playerPosition: String
+    var stickImage: UIImage
 }

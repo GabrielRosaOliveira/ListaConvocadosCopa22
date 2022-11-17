@@ -35,11 +35,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pej-6i-6BZ" secondAttribute="trailing" id="JwT-41-vwq"/>
-                            <constraint firstItem="pej-6i-6BZ" firstAttribute="top" secondItem="rhW-qS-uBC" secondAttribute="bottom" constant="20" id="LGd-rx-alF"/>
-                            <constraint firstAttribute="bottom" secondItem="pej-6i-6BZ" secondAttribute="bottom" id="NP9-dV-uhY"/>
-                            <constraint firstItem="pej-6i-6BZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bhO-ug-HHg"/>
+                            <constraint firstItem="pej-6i-6BZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Cqg-JS-SHn"/>
+                            <constraint firstAttribute="bottom" secondItem="pej-6i-6BZ" secondAttribute="bottom" id="XMQ-Bl-3r9"/>
+                            <constraint firstItem="pej-6i-6BZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XqJ-JC-ZSv"/>
                             <constraint firstItem="rhW-qS-uBC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cbo-u7-wv3"/>
+                            <constraint firstItem="pej-6i-6BZ" firstAttribute="top" secondItem="rhW-qS-uBC" secondAttribute="bottom" constant="20" id="gGb-Hh-X4H"/>
                             <constraint firstItem="rhW-qS-uBC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="70" id="jaK-Fq-Ig7"/>
                         </constraints>
                     </view>

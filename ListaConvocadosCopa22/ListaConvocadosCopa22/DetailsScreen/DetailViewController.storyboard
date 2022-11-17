@@ -16,15 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brazao2" translatesAutoresizingMaskIntoConstraints="NO" id="4SK-LT-lAS">
-                                <rect key="frame" x="0.0" y="439" width="393" height="413"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y7k-Jc-JHg">
                                 <rect key="frame" x="53.666666666666657" y="113" width="286" height="299"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="286" id="cIT-FY-Lfe"/>
                                     <constraint firstAttribute="height" constant="299" id="owi-BX-hgh"/>
                                 </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mascote-removebg-preview-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="4SK-LT-lAS">
+                                <rect key="frame" x="241" y="598" width="152" height="180"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Anj-Vi-UPP">
                                 <rect key="frame" x="53" y="468" width="104" height="44.333333333333371"/>
@@ -55,13 +55,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="4SK-LT-lAS" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="0Ik-LE-v93"/>
-                            <constraint firstAttribute="bottom" secondItem="4SK-LT-lAS" secondAttribute="bottom" id="0rg-mK-075"/>
+                            <constraint firstAttribute="bottom" secondItem="4SK-LT-lAS" secondAttribute="bottom" constant="74" id="0rg-mK-075"/>
                             <constraint firstItem="ufN-HK-ApI" firstAttribute="top" secondItem="Jve-hh-4hg" secondAttribute="bottom" constant="30" id="9i9-hZ-SwP"/>
-                            <constraint firstItem="4SK-LT-lAS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="9us-QR-h2X"/>
+                            <constraint firstItem="4SK-LT-lAS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="241" id="9us-QR-h2X"/>
                             <constraint firstItem="y7k-Jc-JHg" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="54" id="IJS-GT-96l"/>
                             <constraint firstItem="Anj-Vi-UPP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="53" id="KaQ-TN-Kwx"/>
                             <constraint firstItem="DsE-DU-jqi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="53" id="NtN-BC-tIC"/>
-                            <constraint firstItem="4SK-LT-lAS" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="439" id="PmZ-o0-9nd"/>
+                            <constraint firstItem="4SK-LT-lAS" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="598" id="PmZ-o0-9nd"/>
                             <constraint firstItem="ufN-HK-ApI" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="53" id="QRp-qE-3aR"/>
                             <constraint firstItem="DsE-DU-jqi" firstAttribute="top" secondItem="ufN-HK-ApI" secondAttribute="bottom" constant="30" id="Rv9-8i-0XI"/>
                             <constraint firstItem="Jve-hh-4hg" firstAttribute="top" secondItem="y7k-Jc-JHg" secondAttribute="bottom" constant="128" id="UQI-JZ-bHF"/>
@@ -84,7 +84,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="brazao2" width="338" height="501"/>
+        <image name="Mascote-removebg-preview-removebg-preview" width="612" height="408"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

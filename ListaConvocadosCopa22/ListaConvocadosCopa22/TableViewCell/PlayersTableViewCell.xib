@@ -19,7 +19,20 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a6e-Pq-2Ea">
                         <rect key="frame" x="0.0" y="0.0" width="346" height="240"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Bo-oz-fBo">
+                                <rect key="frame" x="257" y="16" width="60" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="En6-ce-A7M"/>
+                                    <constraint firstAttribute="width" constant="60" id="vdV-SQ-fOX"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstItem="3Bo-oz-fBo" firstAttribute="top" secondItem="a6e-Pq-2Ea" secondAttribute="top" constant="16" id="22h-KV-rsC"/>
+                            <constraint firstAttribute="trailing" secondItem="3Bo-oz-fBo" secondAttribute="trailing" constant="29" id="euY-Wd-Y1I"/>
+                        </constraints>
                     </view>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kNf-n4-80o">
                         <rect key="frame" x="20" y="26.666666666666671" width="142" height="187"/>
@@ -54,6 +67,7 @@
                 <outlet property="backGroundView" destination="a6e-Pq-2Ea" id="9mJ-o8-mwX"/>
                 <outlet property="nameLabel" destination="6Dy-rL-dU6" id="swu-Hx-ftg"/>
                 <outlet property="playerImageView" destination="kNf-n4-80o" id="KrF-ry-amU"/>
+                <outlet property="stickImageView" destination="3Bo-oz-fBo" id="vFM-WE-mR0"/>
             </connections>
             <point key="canvasLocation" x="216.79389312977099" y="67.605633802816911"/>
         </tableViewCell>

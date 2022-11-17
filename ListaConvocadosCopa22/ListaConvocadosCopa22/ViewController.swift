@@ -15,17 +15,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     
     let data: [Player] = [
-        Player(playerImage: UIImage(named: "1") ?? UIImage(), playerName: "Alisson", playerAge: "30", currentTeam: "Liverpool", playerPosition: "Goleiro"),
-        Player(playerImage: UIImage(named: "2") ?? UIImage(), playerName: "Thiago Silva", playerAge: "38", currentTeam: "Chelsea", playerPosition: "Zagueiro"),
-        Player(playerImage: UIImage(named: "3") ?? UIImage(), playerName: "Eder Militão", playerAge: "24", currentTeam: "Real Madrid", playerPosition: "Zagueiro"),
-        Player(playerImage: UIImage(named: "4") ?? UIImage(), playerName: "Marquinhos", playerAge: "28", currentTeam: "PSG", playerPosition: "Zagueiro"),
-        Player(playerImage: UIImage(named: "5") ?? UIImage(), playerName: "Alex Telles", playerAge: "29", currentTeam: "Sevilla", playerPosition: "Lateral-esquerdo"),
-        Player(playerImage: UIImage(named: "6") ?? UIImage(), playerName: "Casemiro", playerAge: "30", currentTeam: "Manchester United", playerPosition: "Volante"),
-        Player(playerImage: UIImage(named: "7") ?? UIImage(), playerName: "Neymar", playerAge: "30", currentTeam: "PSG", playerPosition: "Atacante"),
-        Player(playerImage: UIImage(named: "8") ?? UIImage(), playerName: "Paquetá", playerAge: "25", currentTeam: "West Ham", playerPosition: "Meia-atacante"),
-        Player(playerImage: UIImage(named: "9") ?? UIImage(), playerName: "Raphina", playerAge: "25", currentTeam: "Barcelona", playerPosition: "Ponta"),
-        Player(playerImage: UIImage(named: "10") ?? UIImage(), playerName: "Vini Junior", playerAge: "22", currentTeam: "Real Madrid", playerPosition: "Atacante"),
-        Player(playerImage: UIImage(named: "11") ?? UIImage(), playerName: "Richarlison", playerAge: "25", currentTeam: "Tottenham", playerPosition: "Atacante")
+        Player(playerImage: UIImage(named: "1") ?? UIImage(), playerName: "Alisson", playerAge: "30", currentTeam: "Liverpool", playerPosition: "Goleiro", stickImage: UIImage(named: "brazao2") ?? UIImage()),
+        Player(playerImage: UIImage(named: "2") ?? UIImage(), playerName: "Thiago Silva", playerAge: "38", currentTeam: "Chelsea", playerPosition: "Zagueiro", stickImage: UIImage(named: "brazao2") ?? UIImage()),
+        Player(playerImage: UIImage(named: "3") ?? UIImage(), playerName: "Eder Militão", playerAge: "24", currentTeam: "Real Madrid", playerPosition: "Zagueiro", stickImage: UIImage(named: "brazao2") ?? UIImage()),
+        Player(playerImage: UIImage(named: "4") ?? UIImage(), playerName: "Marquinhos", playerAge: "28", currentTeam: "PSG", playerPosition: "Zagueiro", stickImage: UIImage(named: "brazao2") ?? UIImage()),
+        Player(playerImage: UIImage(named: "5") ?? UIImage(), playerName: "Alex Telles", playerAge: "29", currentTeam: "Sevilla", playerPosition: "Lateral-esquerdo", stickImage: UIImage(named: "brazao2") ?? UIImage()),
+        Player(playerImage: UIImage(named: "6") ?? UIImage(), playerName: "Casemiro", playerAge: "30", currentTeam: "Manchester United", playerPosition: "Volante", stickImage: UIImage(named: "brazao2") ?? UIImage()),
+        Player(playerImage: UIImage(named: "7") ?? UIImage(), playerName: "Neymar", playerAge: "30", currentTeam: "PSG", playerPosition: "Atacante", stickImage: UIImage(named: "brazao2") ?? UIImage()),
+        Player(playerImage: UIImage(named: "8") ?? UIImage(), playerName: "Paquetá", playerAge: "25", currentTeam: "West Ham", playerPosition: "Meia-atacante", stickImage: UIImage(named: "brazao2") ?? UIImage()),
+        Player(playerImage: UIImage(named: "9") ?? UIImage(), playerName: "Raphina", playerAge: "25", currentTeam: "Barcelona", playerPosition: "Ponta", stickImage: UIImage(named: "brazao2") ?? UIImage()),
+        Player(playerImage: UIImage(named: "10") ?? UIImage(), playerName: "Vini Junior", playerAge: "22", currentTeam: "Real Madrid", playerPosition: "Atacante", stickImage: UIImage(named: "brazao2") ?? UIImage()),
+        Player(playerImage: UIImage(named: "11") ?? UIImage(), playerName: "Richarlison", playerAge: "25", currentTeam: "Tottenham", playerPosition: "Atacante", stickImage: UIImage(named: "brazao2") ?? UIImage())
     ]
     
     override func viewDidLoad() {
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         
         tableView.layer.cornerRadius = 30
         tableView.layer.borderWidth = 1.5
-        tableView.layer.borderColor = UIColor(red: 147/255, green: 0/255, blue: 32/255, alpha: 1.0).cgColor
+        tableView.layer.borderColor = UIColor(red: 177/255, green: 124/255, blue: 41/255, alpha: 1.0).cgColor
         tableView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
         tableView.showsVerticalScrollIndicator = false
     }
